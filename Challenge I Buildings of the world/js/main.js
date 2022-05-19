@@ -20,7 +20,7 @@ d3.json("data/buildings.json").then((data)=> {
 	rectangles.enter()
 	.append("rect")
 	.attr("x",(d,i)=>(i*50)+10)
-	.attr("y", (d)=>(900-d.height)+30)
+	.attr("y", (d)=>(900-d.height))
 	.attr("width",20)
 	.attr("height", (d)=>d.height)
 	.attr("fill","blue");
